@@ -1,0 +1,118 @@
+/*----------------------- Widgets ----------------------*/
+
+.widget {
+  border: 3px solid #f5f8fa;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 5px 20px 20px;
+  a {
+    color: $default-text-color;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    &::after {
+      background: #1bb1f5;
+      content: "";
+      display: block;
+      height: 3px;
+      margin-top: 9px;
+      width: 60px;
+    }
+  }
+  .icon {
+    float: right;
+    padding-right: 10px;
+    padding-right: 20px;
+  }
+}
+
+.widget-support-forum {
+  margin-bottom: 24px;
+  margin-top: 50px;
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #86939e;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.widget_categories li {
+  list-style: none;
+  padding-left: 5px;
+  padding-top: 15px;
+  a {
+    padding-left: 15px;
+    color: $default-text-color;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    outline: 0 none;
+    &:hover {
+      color: #03a9f4;
+    }
+  }
+  ul {
+    padding-left: 30px;
+    padding-bottom: 20px;
+    li:before {
+      font-family: paperIcons;
+      content: "";
+    }
+  }
+  &:before {
+    font-family: paperIcons;
+    content: "";
+    color: #b5bfc7;
+    font-size: 18px;
+  }
+}
+
+.search-widget {
+  border: none;
+  position: relative;
+  width: 100%;
+  padding: 0;
+
+}
+
+.search-widget button {
+  background: none;
+  border-style: none;
+  color: #e1e8ee;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 8px;
+  top: 0;
+  width: 35px;
+  font-size: 20px;
+}
+
+.search-widget button:hover {
+  color: $brand-primary;
+}
+
+.shop-product {
+  .product-info {
+    padding-top: 16px;
+  }
+  padding: 15px 0;
+  .product-info > a {
+    font-size: 12px;
+    padding-top: 25px;
+    font-weight: 400;
+  }
+  figure {
+    float: left;
+    width: 80px;
+  }
+  &:last-child {
+    border: none;
+  }
+}

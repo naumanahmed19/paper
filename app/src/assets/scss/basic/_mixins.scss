@@ -1,0 +1,87 @@
+//--------------------------------------------- pricing------------------------------------
+
+// rem fallback - credits: http://zerosixthree.se/
+
+//@function calculateRem($size) {
+//  $remSize: $size / 16px;
+//  @return $remSize * 1rem;
+//}
+
+@mixin font-size($size) {
+  font-size: $size !important;;
+  //font-size: calculateRem($size);
+}
+
+// font-weight
+
+@mixin font-weight($weight) {
+  font-weight: $weight;
+}
+
+// font-weight
+
+@mixin color($color) {
+  color: $color !important;
+}
+
+/* =Transition
+-------------------------------------------------------------- */
+// transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+
+@mixin bg-ease-out($duration, $delay) {
+  -webkit-transition: background-color $duration+ms ease-out $delay+s;
+  -moz-transition: background-color $duration+ms ease-out $delay+s;
+  -o-transition: background-color $duration+ms ease-out $delay+s;
+  transition: background-color $duration+ms ease-out $delay+s;
+}
+
+// Mixin
+@mixin translateX($translatex) {
+  -moz-transform: translateX($translatex);
+  -webkit-transform: translateX($translatex);
+  -ms-transform: translateX($translatex);
+  -o-transform: translateX($translatex);
+  transform: translateX($translatex);
+}
+
+@mixin transition($transition) {
+  -moz-transition: all $transition ease;
+  -o-transition: all $transition ease;
+  -webkit-transition: all $transition ease;
+  -ms-transition: all $transition ease;
+  transition: all $transition ease;
+}
+
+@mixin inline-block() {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+
+@mixin border-radius($radius:.25em) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin flex() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flexwrap() {
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+}
+
+@mixin section-text-color($color) {
+  h1, h2, h3, h4, h5, h6, p, span {
+    color: $color !important;
+  }
+}

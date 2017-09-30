@@ -1,0 +1,85 @@
+.pricing {
+  padding: 40px 0;
+  color: $color-6;
+  .title {
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    color: $brand-primary;
+  }
+  .price {
+    font-size: 50px;
+    color: $color-6;
+    font-weight: 500;
+  }
+  .dollar {
+    font-size: 30px;
+  }
+  .slash {
+    font-size: 50px;
+  }
+  .month {
+    font-size: 18px;
+  }
+  .visitors {
+    padding: 30px 0 0;
+  }
+  .pricebox {
+    background: transparent url("../img/basic/table-icon.png") no-repeat scroll bottom right;
+    padding: 45px 45px;
+    @include border-radius(3px);
+    border: 2px solid $brand-border;
+    background-color: white;
+    @include tablet-and-phone {
+      margin-bottom: 20px;
+    }
+  }
+  .pro {
+    border: 2px solid $brand-primary;
+    background-color: $brand-primary;
+  }
+  .extended {
+    position: relative;
+    border: 2px solid $brand-primary;
+    &:before {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 70px 70px 0;
+      border-color: transparent $brand-primary transparent transparent;
+      display: block;
+      position: absolute;
+      top: 0;
+      content: "";
+      right: 0;
+    }
+    &:after {
+      width: 0;
+      height: 0;
+      display: block;
+      position: absolute;
+      top: 6px;
+      content: "\f005";
+      font-family: "paperIcons";
+      font-size: 20px;
+      color: #fff;
+      right: 25px;
+    }
+  }
+  ul {
+    padding: 25px 0 30px 0;
+    li {
+      list-style: none;
+      color: $default-text-color;
+      font-size: 14px;
+      padding: 15px 0;
+      b {
+        color: $brand-primary;
+      }
+    }
+  }
+  .btn {
+    width: 100%;
+  }
+
+}

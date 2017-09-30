@@ -1,0 +1,80 @@
+.hero-video {
+  display: table-cell;
+  vertical-align: middle;
+  width: 1%;
+  padding: 100px 0 120px;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  > .container {
+    position: relative;
+    z-index: 1;
+  }
+  .overlay {
+    z-index: 0;
+    background: #000;
+    height: 100vh;
+  }
+  .label {
+    padding: 8px 15px;
+    font-weight: 300;
+  }
+}
+
+.video-background {
+  background: #000;
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+
+}
+
+.video-foreground {
+  height: 300%;
+  top: -100%;
+}
+
+.video-foreground,
+.video-background iframe, .video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .vid-info {
+    width: 50%;
+    padding: .5rem;
+  }
+  .vid-info h1 {
+    margin-bottom: .2rem;
+  }
+}
+

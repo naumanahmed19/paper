@@ -1,0 +1,57 @@
+.social {
+  list-style: none;
+  padding: 35px 0;
+  li {
+    display: inline-block;
+    border-radius: 50%;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    font-size: 18px;
+    margin-right: 15px;
+    text-align: center;
+    a {
+      color: #fff;
+    }
+    i {
+      padding: 0;
+    }
+  }
+  &.square {
+    li {
+      border-radius: 0;
+    }
+  }
+  &.rounded {
+    li {
+      border-radius: 10px;
+    }
+  }
+
+}
+
+.facebook {
+  background: #507cbe;
+}
+.twitter {
+  background: #63cdf1;
+}
+.gplus {
+  background: #f16261;
+}
+.instagram {
+  background: #444444;
+}
+.youtube {
+  background: #CA3737;
+}
+.linkedin {
+  background: #90cadd;
+}
+.dribbble {
+  background: #d97aa6;
+}
+.behance {
+  background: #0785f3;
+}

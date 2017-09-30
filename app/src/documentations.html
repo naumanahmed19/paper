@@ -1,0 +1,551 @@
+<!-- partial:partials/_head.html -->
+<!-- partial -->
+<main class="page">
+    <!-- partial:partials/_header.html -->
+    <!-- partial -->
+    <div class="search-section">
+        <div class="container">
+            <h1>Documentations
+                <small>version: 1.5.0</small>
+            </h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 sticky">
+                <aside class="main-sidebar ">
+                    <div class="">
+                        <section class="sidebar p-t-b-40">
+                            <ul class="sidebar-menu scroll">
+                                <li>
+                                    <a href="#introduction">
+                                        <i class="icon icon-smiling-face"></i> <span>Introduction</span>
+                                    </a>
+                                </li>
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="icon icon-folders"></i>
+                                        <span>Files & Folders</span>
+                                        <span class="label label-primary pull-right">4</span>
+                                    </a>
+                                    <ul class="treeview-menu">
+                                        <li><a href="#structure"><i class="icon icon-circle-o"></i> Directory Structure</a>
+                                        </li>
+                                        <li><a href="#partials"><i class="icon icon-folder5"></i>Partials</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#installation">
+                                        <i class="icon icon-clipboard-list"></i> <span>Installation</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#production">
+                                        <i class="icon icon-clipboard-list"></i> <span>Build Production Version</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#overlays">
+                                        <i class="icon icon-clipboard-list"></i> <span>Overlays</span>
+                                    </a>
+                                </li>
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="icon icon-hand-grab-o"></i>
+                                        <span>Plugins</span>
+                                        <span class="label label-primary pull-right">4</span>
+                                    </a>
+                                    <ul class="treeview-menu">
+                                        <li><a href="#scroll"><i class="icon icon-circle-o text-red"></i> Smooth
+                                            Scroll</a></li>
+                                        <li><a href="#sticky"><i class="icon icon-circle-o text-yellow"></i> Sticky
+                                            Element</a></li>
+                                        <li><a href="#plugins-list"><i class="icon icon-folder5 text-blue"></i>Plugins
+                                            List</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#main_menu">
+                                        <i class="icon icon-clipboard-list"></i> <span>Main Navigation Bar</span>
+                                    </a>
+                                </li>
+                                <li class="treeview">
+                                    <a href="#">
+                                        <i class="icon icon-pie-chart"></i>
+                                        <span>Charts</span>
+                                        <i class="icon icon-angle-left pull-right"></i>
+                                    </a>
+                                    <ul class="treeview-menu">
+                                        <li><a href="#charts"><i class="icon icon-circle-o"></i> How to add</a>
+                                        </li>
+                                        <li><a href="http://www.chartjs.org/docs/latest/" target="_blank"><i
+                                                class="icon icon-circle-o"></i>
+                                            Complete Chart Docs</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#contact">
+                                        <i class="icon icon-envelope"></i> <span>Contact Form</span>
+                                        <small class="label pull-right bg-red">3</small>
+                                    </a>
+                                </li>
+                                <li class="header">LABELS</li>
+                                <li><a href="#"><i class="icon icon-circle-o text-red"></i> <span>Important</span></a>
+                                </li>
+                                <li><a href="#"><i class="icon icon-circle-o text-yellow"></i> <span>Warning</span></a>
+                                </li>
+                                <li><a href="#"><i class="icon icon-circle-o text-aqua"></i>
+                                    <span>Information</span></a>
+                                </li>
+                            </ul>
+                        </section>
+                    </div>
+                    <!-- /.sidebar -->
+                </aside>
+            </div>
+            <article class="col-md-9 p-b-40 b-l p-40">
+                <section id="introduction">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2><i class="icon icon-smiling-face"></i> Introduction</h2>
+                            <hr>
+                            <p>
+                                Thank you for purchasing this plugin. We covered almost everything in this document that
+                                how easily you can setup Paper. If you have any questions that
+                                are beyond the scope of this help file, please feel free to contact us..
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <section id="structure" class="">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2><i class="icon icon-folders"></i> Directory Structure</h2>
+                            <hr>
+                            <p>Download and extract zip files. You will find basic development structure like this.</p>
+                            <blockquote>
+                                <ul>
+                                    <li>
+                                        <i class="icon icon-folder5"></i> app
+                                        <ul>
+                                            <li>
+                                                <p><i class="icon icon-folder5"></i>src</p>
+                                                <ul>
+                                                    <li>
+                                                        <p><i class="icon icon-folder5"></i>assets</p>
+                                                        <p><i class="icon icon-folder5"></i>partials</p>
+                                                        <p><i class="icon icon-document-code"></i>*.*_files.html</p>
+                                                    </li>
+                                                </ul>
+                                                <p><i class="icon icon-document-code"></i>gulpfile.js</p>
+                                                <p><i class="icon icon-document-code"></i>package.json</p>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </blockquote>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="table-responsive">
+                            </div>
+                        </div>
+                    </div>
+                    <section id="partials">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3><i class="icon icon-folder5"></i> Partials</h3>
+                                <hr>
+                                <p>
+                                    Paper is using partials folder to inject some common html files like header and
+                                    footer.
+                                </p>
+                                <table class="table table-bordered table-striped">
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row"><code>_head.html</code></th>
+                                        <td>Basic HTML meta tags and everything that could be in <code>&lt;head&gt;&lt;/head&gt;</code>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><code>_foot.html</code></th>
+                                        <td>Body & wrapper close</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><code>_header.html</code></th>
+                                        <td>Main Navigation or menu</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><code>_header.html</code></th>
+                                        <td>Responsible for site pre header</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><code>_footer.html</code></th>
+                                        <td>Footer of your site.</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"><code>_script.html</code></th>
+                                        <td>Responsible for all site scripts</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <div id="installation">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2><i class="icon icon-clipboard-list"></i> Installation</h2>
+                            <hr>
+                            <p>You may need following things to get started. Please download and install
+                                dependencies</p>
+                            <ul class="arrow-list">
+                                <li><p>To install paper please make sure you have installed node and gulp.
+                                    <a href="https://nodejs.org/en/download/">Download Node</a>
+                                </p></li>
+                                <li>
+                                    <p>
+                                        You can use any software of your choice to edit HTML files or use
+                                        <a href="https://code.visualstudio.com/">Download VS Code</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <h3>Installing gulp 4 globally</h3>
+                            <p>You will need to remove your current gulp global package before installing v4 in order to
+                                do an upgrade.</p>
+                            <div class="alert alert-info">
+                                <p><em><strong>Note:</strong> The <code>$</code> shows the command is to be run on the
+                                    command line and shouldn’t be typed</em></p>
+                            </div>
+                            <pre class=" language-bash"><code class=" language-bash">$ npm <span class="token function">rm</span> -g gulp
+$ npm <span class="token function">install</span> -g gulp-cli</code></pre>
+                            <p>This command removes your current global package and installs v4 from the gulp-cli 4.0
+                                branch.</p>
+                            <p>Make sure you don't get any errors from the first command before you type the second.
+                                Depending on your set-up, you may need to run them with <code>sudo</code>.</p>
+                            <p>To verify what version you have installed globally, you can run the below command (and
+                                should see a similar output)</p>
+                            <pre class="“” language-git"><code class=" language-git">$ gulp -v
+CLI version 1.2.1</code></pre>
+                            <br>
+                            <h2>Paper Setup</h2>
+                            <div class="video-responsive">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/gxho8U3GDTA"
+                                        frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <p>Its time to open Papert HTML app folder to your favourite editor. Its easy to use an
+                                editor which have terminal. Like VS Code or PhpStrom</p>
+                            <p>First of all install all node modules by using this command:</p>
+                            <pre><code>$ npm install</code></pre>
+                            <br>
+                            <p>After all node modules installation completed run</p>
+                            <pre><code>gulp watch</code></pre>
+                            <p>gulp watch will create a temporary folder with name of <em>tmp</em></p>
+                            <div class="alert alert-info">
+                                <p><i class="icon icon-info-circle s-24"></i></p>
+                                only change content in <em>src</em> folder tmp folder is just for preview.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="production">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2><i class="icon icon-clipboard-list"></i> Production Version</h2>
+                            <hr>
+                            <p>After all changes you need to create production version of your product</p>
+                            <pre><code>$ gulp production</code></pre>
+                            <br>
+                            <h4>Creating Minified Version</h4>
+                            <p> If you want a minified version then run</p>
+                            <pre><code>$ gulp production-min</code></pre>
+                            <p>Above command will create a new folder "dist" it will be fully optimized. It will
+                                compress and minify all of your html, css and js files. You can copy folder to your ftp
+                                or framework to use it.</p>
+                            <h2><i class="icon icon-upload"></i> Easy Deploy</h2>
+                            <hr>
+                            <p>
+                                If you are using version 1.5 or later you can use easy deploy option to upload all files
+                                to your ftp server with just one commnand.
+                            </p>
+                            <p>
+                                Please make sure to run gulp watch first and make changes before you do this and you
+                                have to add your server details to upload file. Please open ftp.config and add your
+                                server details.
+                            </p>
+                            <pre><code>$ gulp deploy</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div id="main_menu">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2><i class="icon icon-align-justify"></i> Main Navigation Bar</h2>
+                            <hr>
+                            <p>
+                                You don't have to create extra HTML for responsive menu paper convert it for your.
+                            </p>
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Navigation Wrapper</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <p>
+                                        Navigation wrapper is useful and provide different variations. Helper classes
+                                        are given below.
+                                    </p>
+                                    <pre><code>&lt;div class="nav-absolute nav-border nav-light"&gt;
+&nbsp;&nbsp;&lt;nav&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- nav block --&gt;
+&nbsp;&nbsp;&lt;/nav&gt;
+&lt;/div&gt;</code></pre>
+                                    <table class="table table-bordered table-striped">
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row"><code>nav-absolute</code></th>
+                                            <td>To make nav absolutes use full for hero / image sections</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><code>nav-border</code></th>
+                                            <td>To add bottom border</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><code>nav-fixed</code></th>
+                                            <td>Navigation Fixed on Scroll</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><code>nav-light</code></th>
+                                            <td>Navigation parent links color white</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Nav Block</h3>
+                                </div>
+                                <div class="panel-body">
+
+              <pre><code>&lt;nav class="mainnav navbar navbar-default"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="container"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div id="dl-menu" class="xv-menuwrapper responsive-menu"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Add nav links here--&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&lt;/nav&gt;
+</code></pre>
+                                    <h3>Menu Links</h3>
+                                    <pre><code>&lt;ul class="dl-menu"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li class="parent megamenu"&gt;&lt;a href="#"&gt;Home&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="lg-submenu"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&gt;Column 1 Heading&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="lg-submenu"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Column 1 Link&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Column 1 Link&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a&gt;Column 2 Heading&lt;/a&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ul class="lg-submenu"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Column 2 Link&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#"&gt;Column 2 Link&lt;/a&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ul&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                    <table class="table table-bordered table-striped">
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row"><code>parent</code></th>
+                                            <td>To make an item parent</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><code>megamenu</code></th>
+                                            <td>To make drop down menu a mega menu</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><code>lg-submenu-left</code></th>
+                                            <td>To change megun menu drop down position. Only works for first level</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="table-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="overlays">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Overlays</h2>
+                            <hr>
+                            <p>
+                                Adding overlay is pretty easy. Jus copy overlay div inside a relative section. Overlay
+                                is flexible you can change colors and direction as you want.
+                            </p>
+                            <div class="panel panel-info">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Overlay</h3>
+                                </div>
+                                <div class="panel-body">
+                                <pre><code>&lt;div class="overlay"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-start="#f5abab"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-end="#a86d07"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-orientation="tobottom"
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;data-opacity=".5"&gt;
+&lt;/div&gt;</code></pre>
+                                    <table class="table table-bordered table-striped">
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row"><code>data-start</code></th>
+                                            <td>Ruby gem code (Sass configuration, Rails and Compass integrations)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><code>data-end</code></th>
+                                            <td>Converter scripts (turning upstream Less to Sass)</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><code>data-orientation</code></th>
+                                            <td>Compilation tests</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"><code>data-opacity</code></th>
+                                            <td>Compass package manifest</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="table-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sticky">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Smooth Scroll</h2>
+                            <hr>
+                            <p>You can make any URL to work for smooth scroll. It only work inside a page. Useful for
+                                single page website. For demo you can check sidebar of this documentation page. Just add
+                                a scroll class to make it work.</p>
+                            <pre><code>&lt;a href="#section-id" class="scroll"&gt;Go To Section&gt;&lt;/a&gt;</code></pre>
+                            or for more than one url
+                            <pre><code>&lt;div class="scroll"&gt;
+&lt;a href="#section-id"&gt;Go To Section&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div id="scroll">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Sticky Item</h2>
+                            <hr>
+                            <p> To make an item sticky add sticky class</p>
+                            <pre><code>&lt;div class="sticky"&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad architecto asperiores dolor ea exercitationem hic ipsam iusto maiores natus nulla numquam perspiciatis quasi quis recusandae, reiciendis rerum similique ut.
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div id="charts">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Charts</h2>
+                            <hr>
+                            <p>Paper is using chart.js you may need to check chart.js documents to make
+                                modifications.</p>
+                            <pre><code>&lt;canvas class="chart"
+&nbsp;&nbsp;&nbsp;&nbsp;data-type="pie"
+&nbsp;&nbsp;&nbsp;&nbsp;data-labels="HTML,WordPress,Laravel"
+&nbsp;&nbsp;&nbsp;&nbsp;data-values="12, 19, 16"
+&nbsp;&nbsp;&nbsp;&nbsp;width="400"
+&nbsp;&nbsp;&nbsp;&nbsp;height="400"&gt;
+&lt;/canvas&gt;</code></pre>
+                            <p>You can use above markup at charts. Change type if you want.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Contact Form</h2>
+                            <hr>
+                            <p>Please make sure you have change email in contact form for this you need to edit
+                                "assets/php/submit.php" add your email</p>
+                            <pre><code>$your_email="your_email@site.com";</code></pre>
+                            <p>You can also add more options if you want or change email template.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="compress">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Compress Images</h2>
+                            <hr>
+                            <p>To speed your site you may need to compress some of your images. For that run
+                                command:</p>
+                            <pre><code>$ gulp img-compress</code></pre>
+                            <p> images in demo folder will be compressed only. you must first create production version.
+                                you can change folder name in gulpfile.js if you want.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="plugins">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Plugins</h2>
+                            <hr>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    Twitter Bootstrap, its recommended to see visit bootstrap docs
+                                </li>
+                                <li class="list-group-item"><a
+                                        href="http://sachinchoolur.github.io/lightslider/index.html">Light Slider</a>
+                                </li>
+                                <li class="list-group-item"><a href="https://owlcarousel2.github.io/OwlCarousel2/">Owl
+                                    Slider</a></li>
+                                <li class="list-group-item"><a href="http://jackonthe.net/css3animateit/">CSS3
+                                    Animations</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="credits">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Credits</h2>
+                            <hr>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    Twitter Bootstrap, its recommended to see visit bootstrap docs
+                                </li>
+                                <li class="list-group-item">Jquery – JS library</li>
+                                <li class="list-group-item"><a href="icomoon.io">Generating Fonts Package</a></li>
+                                <li class="list-group-item"><a href="www.flaticon.com">Flat Icon for various fonts</a>
+                                </li>
+                                <li class="list-group-item"><a href="https://unsplash.com/">Unsplash Images</a></li>
+                                <li class="list-group-item">Gulp</li>
+                                <li class="list-group-item">NodeJS</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</main>
+<!-- partial:partials/_footer.html -->
+<!-- partial -->

@@ -1,0 +1,32 @@
+.call-to-action {
+  border: 3px solid $brand-border;
+  border-radius: 3px;
+  padding: 20px;
+  margin: 20px 0;
+  .action-btn {
+    display: inline-block;
+    float: right;
+  }
+  h3 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #43484d;
+    margin: 0 0 10px;
+  }
+  p {
+    font-size: 20px;
+    font-weight: 300;
+    color: #86939e;
+  }
+  .btn-action {
+    margin-top: 12px;
+
+    @include desktop {
+      float: right;
+    }
+  }
+
+  @include tablet-and-phone {
+    text-align: center;
+  }
+}

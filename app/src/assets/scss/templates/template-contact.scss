@@ -1,0 +1,140 @@
+/* ------------------
+   Google Map
+   ------------------*/
+/* ============================
+19-contact-us
+=========================== */
+.g-map {
+  width: 100%;
+  height: 350px;
+}
+
+.g-map img {
+  max-width: none !important;
+}
+
+.map-section {
+  .map {
+    padding: 15px;
+    border: 3px solid $color-5;
+    border-radius: 3px;
+  }
+  #googleMap {
+    height: 500px;
+  }
+  padding: 40px 0 40px;
+}
+
+/* ---------------------------
+ *  Contact Detail
+ * --------------------------- */
+
+.contact-detail .promo-block-wrapper {
+  background: #ffffff;
+  display: table;
+  width: 100%;
+  border: 3px solid $color-5;
+  border-radius: 3px;
+  .fa {
+    font-size: 24px;
+    color: $default-text-color;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-detail .promo-block-wrapper {
+    margin-bottom: 1px;
+  }
+}
+
+.contact-detail .promo-icon-blue {
+  background: #4d6de3;
+  color: #ffffff;
+}
+
+.contact-detail .promo-icon-green {
+  background: #7AC38F;
+  color: #ffffff;
+}
+
+.contact-detail .promo-icon-yellow {
+  background: #FCE38A;
+  color: #ffffff;
+}
+
+.promo-content {
+  padding: 15px 40px;
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+  }
+  address {
+    line-height: 25px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+  .contact-detail .promo-content {
+    padding: 20px 20px;
+  }
+}
+
+/* ---------------------------
+ * Contact Form
+ * --------------------------- */
+
+.contact-form {
+  padding: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  background: $color-5;
+  h3 {
+    padding-bottom: 20px;
+  }
+  .btn {
+    margin-top: 20px;
+  }
+}
+
+.user-name,
+.user-email,
+.user-phone,
+.user-url,
+.user-message {
+  position: relative;
+}
+
+.user-name::after,
+.user-email::after,
+.user-phone::after,
+.user-url::after,
+.user-message::after {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-family: "paperIcons";
+  color: #dadada;
+}
+
+.user-name::after {
+  content: "\f007";
+}
+
+.user-email::after {
+  content: "\f003";
+}
+
+.user-phone::after {
+  content: "\f095";
+}
+
+.user-url::after {
+  content: "\f0ac";
+}
+
+.user-message::after {
+  content: "\f086";
+}

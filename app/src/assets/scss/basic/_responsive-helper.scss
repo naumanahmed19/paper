@@ -1,0 +1,62 @@
+//Usage Responsive Mixin Example
+/*
+
+@include tablet-and-phone {
+    display: none;
+}
+
+*/
+
+$phone-width: 420px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$desktop-below: 980px;
+
+$lg-desktop-width: 1400px;
+@mixin phone {
+  @media (max-width: #{$phone-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet-and-phone {
+  @media (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-below {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin lg-desktop {
+  @media (min-width: #{$lg-desktop-width}) {
+    @content;
+  }
+}
+
+@include tablet-and-phone {
+  .responsive, h1, h2, h3, p, a, .responsive .text-left, .responsive .text-right, img {
+    text-align: center !important;
+  }
+}
+
+@include phone {
+  .responsive-phone {
+    text-align: center;
+  }
+}

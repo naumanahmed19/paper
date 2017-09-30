@@ -1,0 +1,20 @@
+.hero-header {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-size: cover;
+  background: rgba(28, 36, 65, 0.93);
+  background-position: center;
+  background-repeat: no-repeat;
+  .table {
+    display: table;
+    height: 100%;
+  }
+  .header-text {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .container {
+    height: 100%;
+  }
+}

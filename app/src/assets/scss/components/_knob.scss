@@ -1,0 +1,134 @@
+/* Circular Progress Bars */
+
+.circular-progressbar {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.circular-progressbar h6 {
+  margin: 20px 0 0;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.circular-progressbar span.rate {
+
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.circular-progressbar-inner {
+  position: relative;
+}
+
+.circular-progressbar-inner span.knob-percent {
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  font-size: 35px;
+  line-height: 35px;
+  margin-right: -5px;
+}
+
+.circular-progressbar.small .circular-progressbar-inner span.knob-percent {
+  font-size: 25px;
+  margin-top: -18px;
+}
+
+.circular-progressbar-inner span.knob-percent span {
+  font-size: 15px;
+  vertical-align: top;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.circular-progressbar.small .circular-progressbar-inner span.knob-percent span {
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.progressbar {
+  margin: 30px 0;
+}
+
+.progressbar .progressbar-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+  display: block;
+  margin: 0 0 10px;
+}
+
+.progressbar-container {
+  position: relative;
+  border: 1px solid #e9e9e9;
+  background: #eee;
+  height: 8px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+.progressbar-container .progress-width {
+  position: relative;
+  height: 8px;
+  width: 0%;
+  background: #eb5858;
+  border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+}
+
+.progressbar-container .progress-width:after {
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  position: absolute;
+  right: -9px;
+  top: -5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.progressbar-container .progress-percent {
+  position: absolute;
+  left: 0;
+  display: none;
+  top: -45px;
+  width: 45px;
+  height: 25px;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 3px 0;
+  font-size: 13px;
+  color: #333;
+  margin-left: -22px;
+}
+
+.progressbar-container .progress-percent:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -6px;
+  bottom: -6px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #fff;
+}
+
+.progressbar-container .progress-percent:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  margin-left: -7px;
+  bottom: -7px;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #e5e5e5;
+}

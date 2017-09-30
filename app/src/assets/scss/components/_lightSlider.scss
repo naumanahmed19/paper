@@ -1,0 +1,113 @@
+//override light slider styles
+.lightSlider {
+  visibility: hidden;
+  opacity: 0;
+  .lSAction > .lSPrev, .lSAction > .lSNext {
+    background: none !important;
+  }
+  .lslide {
+    position: relative;
+  }
+  .slide-caption {
+    position: absolute;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    color: #fff;
+    width: 600px;
+    margin: 0 auto;
+    vertical-align: middle;
+    top: 30%;
+    left: 0;
+    right: 0;
+    p {
+      margin: 20px 0;
+    }
+    @include tablet-and-phone {
+      display: none;
+    }
+  }
+  .carousel-caption {
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $default-text-color;
+    text-align: center;
+    text-shadow: none;
+    top: 25%;
+  }
+  .overlay {
+    z-index: 0;
+  }
+
+}
+
+.pager-ab-top-left {
+  .lSPager.lSpg {
+    position: absolute !important;
+    top: 8px;
+    left: 30px;
+  }
+}
+.showSlider {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.lSSlideOuter .lSPager.lSpg > li a {
+  background-color: #eee;
+  height: 10px;
+  width: 10px;
+}
+
+.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
+  background-color: $brand-primary;
+}
+
+.lSPager.lSGallery {
+  img {
+    opacity: 0.3;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  .active {
+    img {
+      opacity: 1;
+    }
+  }
+}
+
+.lslide.active {
+  @include desktop {
+    .typewriter {
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .15em solid rgba(0, 0, 0, 0.5); /* The typwriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      animation: typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    }
+
+    /* The typing effect */
+    @keyframes typing {
+      from {
+        width: 0
+      }
+      to {
+        width: 100%
+      }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+      from, to {
+        border-color: transparent
+      }
+      50% {
+        border-color: rgba(0, 0, 0, 0.4);
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+/**
+ *  Let's import everything we need for this project
+ *  Make sure you have run npm install
+ *
+ *  Command : gulp watch or gulp styles
+ *
+ */
+// Necessary Modules
+@import 'basic/variables';
+// colors, fonts etc...
+@import "bootstrap/bootstrap";
+@import '../scss/libs/paperIcons';
+@import '../scss/libs/roboto';
+@import '../scss/libs/animations';
+// Extra Modules
+@import "../scss/libs/lightslider";
+@import '../scss/libs/animated-headline';
+/*
+ * Should be at top of all other
+ */
+@import "basic/responsive-helper";
+@import 'basic/mixins';
+@import "basic/icon";
+@import "basic/base";
+@import "all";
+
+
+/*
+ * Basic or Must have Elements
+ * You might not want to comment or delete them
+ */
+@import "basic/preloader";
+@import "basic/nav";
+@import "basic/figure";
+@import "basic/hero";
+@import "basic/breadcrumbs";
+@import "basic/comments";
+@import "basic/pageHeader";
+@import "basic/footer";
+@import "basic/dividers";
+@import "_widgets";
+@import "pre_header";
+@import "home";
+@import "topics";
+@import "basic/icon";
+@import "blog";
+//Components
+@import "_flex-testimonials";
+@import "_counter";
+@import "_events";
+@import "_forms";
+@import "_pricing";
+@import "_sidebarMenu";
+
+@import "basic/social";
+/*
+ * Templates Specific Styles
+ */
+@import "templates/product";
+@import "templates/template-contact";
+@import "templates/template-resume";
+@import "templates/template-shop";
+@import "templates/template-error";
+@import "_shortcodes";
+/*
+ * Components
+ */
+@import "components/xvslider";
+@import "components/portfolio-filter";
+@import "components/timeline";
+@import "components/contactBar";
+@import "components/mokupSlider";
+@import "components/services";
+@import "components/lightSlider";
+@import "components/knob";
+@import "components/counter";
+@import "components/sticky";
+@import "components/parallax";
+@import "components/heroVideo";
+@import "components/callToAction";
+// PAPER VEVERSION : 1.2
+@import "components/promotionsBar";
+
+//should be at end to override styles
+@import "basic/helper";
+@import "kit/colors";
+@import "single"; //Blog Single Page

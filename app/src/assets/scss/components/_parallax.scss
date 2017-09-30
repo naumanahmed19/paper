@@ -1,0 +1,16 @@
+.parallax {
+  display: table-cell;
+  vertical-align: middle;
+  width: 1%;
+  padding: 100px 0 120px;
+  height: 100vh;
+  z-index: 1;
+  overflow: hidden;
+  clear: both;
+  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 0;
+  color: #fff;
+  background-size: cover;
+}

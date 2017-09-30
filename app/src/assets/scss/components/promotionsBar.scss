@@ -1,0 +1,23 @@
+.promotionsBar {
+  position: relative;
+  color: #fff;
+  background: $brand-primary;
+  z-index: 98;
+  .promotionsMsg {
+    padding: 15px;
+    p {
+      font-size: 16px;
+      font-weight: 100;
+      margin: 0;
+    }
+    position: relative;
+    .btn {
+      position: absolute;
+      right: 0;
+      top: 8px;
+      @include tablet-and-phone {
+        position: relative;
+      }
+    }
+  }
+}

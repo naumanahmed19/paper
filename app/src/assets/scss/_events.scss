@@ -1,0 +1,71 @@
+.events-home {
+  .speakers {
+    li {
+      list-style: none;
+      display: inline-block;
+    }
+  }
+}
+
+.events-wrapper {
+  padding: 50px 0;
+}
+
+.events-wrapper .event {
+  display: table;
+  margin-bottom: 30px;
+  padding-top: 30px;
+  position: relative;
+  width: 100%;
+}
+
+.events-wrapper .event + .event {
+  border-top: 1px solid #f4f7f9;
+}
+
+.events-wrapper .event figure {
+  float: left;
+  height: 150px;
+  margin-right: 30px;
+  overflow: hidden;
+  width: 230px;
+}
+
+.events-wrapper .event > time {
+  float: left;
+  margin-right: 30px;
+}
+
+.events-wrapper .event > time span {
+  display: block;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.events-wrapper .event > time span.month-event {
+  border-bottom: 2px solid #2bb7ff;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.events-wrapper .event > time .year-event {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.event-detail a.event-title, .event-detail h2 {
+  color: #222;
+  display: block;
+  font-size: 22px;
+}
+
+.event-meta {
+  margin: 10px 0;
+}
+
+.event-meta li {
+  display: inline-block;
+  font-size: 16px;
+  list-style: outside none none;
+  margin-right: 15px;
+}

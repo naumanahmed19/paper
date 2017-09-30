@@ -1,0 +1,115 @@
+/***************************** 3- Topics ****************************/
+
+.topics {
+  padding: 50px 0;
+  header {
+    border-bottom: 1px solid #eee;
+    position: relative;
+    h2 {
+      font-size: 38px;
+      font-weight: 300;
+      font-family: "Roboto", sans-serif;
+      color: #43484d;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 300;
+      font-family: "Roboto", sans-serif;
+      color: #5e6977;
+    }
+  }
+  .topics-btn {
+    margin-top: 30px;
+    .btn {
+      margin-top: 60px;
+      color: #358ed7;
+    }
+    span {
+      display: inline;
+      padding-left: 30px;
+    }
+  }
+  h3 a {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    color: #43484d;
+    text-decoration: none;
+  }
+}
+
+.media-border {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.topics-wrapper {
+  border-radius: 5px;
+  margin-bottom: 40px;
+  h3 {
+    padding: 0;
+  }
+  .topics-list {
+    padding: 20px 0;
+    li {
+      list-style: none;
+      padding-left: 5px;
+      padding-top: 10px;
+      a {
+        padding-left: 15px;
+        color: #5e6977;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Roboto", sans-serif;
+        text-decoration: none;
+        outline: 0 none;
+        &:hover {
+          color: #03a9f4;
+        }
+      }
+      &:before {
+        font-family: paperIcons;
+        content: "";
+        color: #b5bfc7;
+        font-size: 18px;
+      }
+    }
+  }
+  .topics-meta {
+    padding: 7px 0px;
+    margin: 0;
+    border-top: 1px solid #e1e8ee;
+    li {
+      list-style: none;
+      display: inline-block;
+      color: #5e6977;
+      font-size: 14px;
+      font-weight: 300;
+      padding-right: 10px;
+    }
+  }
+  .icon {
+    color: #4ea9e0;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 15px;
+  }
+}
+
+.topics-wrapper.border-style {
+  border: 3px solid #e1e8ee;
+  h3 {
+    padding: 0 40px;
+  }
+  .topics-list {
+    padding: 20px 40px;
+    li {
+      padding-left: 5px;
+    }
+  }
+  .topics-meta {
+    background: #f5f8fa;
+    padding: 7px 10px;
+    text-align: center;
+    border-top: 1px solid #e1e8ee;
+  }
+}

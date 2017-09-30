@@ -1,0 +1,142 @@
+.section {
+  padding: 50px 0;
+  header {
+    text-align: center;
+    padding-bottom: 50px;
+    h1 {
+      text-transform: uppercase;
+    }
+  }
+}
+
+/***************************** Header ****************************/
+.circles-header {
+  background: url("../img/icon/icon-circles.png") no-repeat scroll center bottom;
+}
+
+.home-search {
+  background: url("../img/icon/icon-circles.png") no-repeat scroll center bottom;
+  margin-bottom: 100px;
+  &::after {
+    background: transparent url("../img/icon/icon-telescope.png") no-repeat scroll center bottom;
+    bottom: -65px;
+    content: "";
+    display: block;
+    height: 128px;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    width: 128px;
+  }
+}
+
+.search-section {
+  background-color: $brand-bg;
+  position: relative;
+  border-bottom: 1px solid $brand-border;
+  border-top: 1px solid $brand-border;
+}
+
+.masthead {
+  padding: 100px 0 80px 0;
+  text-align: center;
+  h1 {
+    color: #86939e;
+    font-weight: 900;
+    font-size: 60px;
+    @include tablet-and-phone {
+      font-size: 30px;
+    }
+  }
+  p {
+    color: #86939e;
+
+    font-weight: 100;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    padding-top: 30px;
+    text-align: center;
+    width: 70%;
+    @include desktop {
+      font-size: 22px;
+    }
+  }
+  .search-field {
+    width: 100%;
+    font-size: 18px;
+    border-radius: 30px;
+    border: 2px solid #e1e8ee;
+    padding: 0px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 60px;
+  }
+  form {
+    position: relative;
+    margin-top: 10px;
+    button {
+      position: absolute;
+      right: 25px;
+      top: 25px;
+      background: none;
+      border: none;
+      font-size: 30px;
+      color: #86939e;
+    }
+  }
+  .btn-hero {
+    border: 3px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    &:hover {
+      background: rgba(255, 255, 255, 0.2);
+      -webkit-transition: background-color 500ms ease-out 0.2s;
+      -moz-transition: background-color 500ms ease-out 0.2s;
+      -o-transition: background-color 500ms ease-out 0.2s;
+      transition: background-color 500ms ease-out 0.2s;
+    }
+  }
+}
+
+.section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  header {
+    text-align: center;
+    padding: 40px;
+  }
+}
+
+.template-genre .overlay {
+  background: rgba(2, 28, 53, 0.9) none repeat scroll 0 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.page-template-template-card {
+  .content-area {
+    background: url("../img/icon/icon-circles.png") no-repeat scroll center center;
+    background-color: #f5f8fa;
+  }
+  .card {
+    padding: 30px;
+    .icon {
+      padding-bottom: 30px;
+      text-align: center;
+    }
+    .section-subtitle {
+      width: 78%;
+    }
+    .forget-pass {
+      padding-top: 30px;
+    }
+  }
+}
+

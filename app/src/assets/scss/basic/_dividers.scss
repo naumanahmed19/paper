@@ -1,0 +1,83 @@
+/* Horizontal Rules */
+.horizontal-rule {
+  overflow: hidden;
+  position: relative;
+  display: block;
+  margin: 30px 0;
+  height: 14px;
+  height: 20px;
+  .icon {
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 14px;
+    z-index: 10;
+    text-align: center;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    bottom: 12px;
+    margin-left: -15px;
+    width: 50%;
+    border-top: 1px solid $brand-border2;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: -15px;
+    bottom: 12px;
+    margin-right: -15px;
+    width: 50%;
+    border-top: 1px solid $brand-border2;
+  }
+  &.dashed {
+    &:before {
+      border-top: 1px dashed $brand-border2;
+    }
+    &:after {
+      border-top: 1px dashed $brand-border2;
+    }
+  }
+  &.on-left {
+    &:after {
+      width: 100%;
+      margin-right: -25px;
+    }
+    &:before {
+      display: none;
+    }
+    .icon {
+      left: 0;
+      margin-left: -7px;
+    }
+  }
+  &.on-right {
+    &:before {
+      width: 100%;
+      margin-left: -25px;
+    }
+    &:after {
+      display: none;
+    }
+    .icon {
+      right: 0;
+      left: auto;
+      margin-left: 0;
+      margin-right: -7px;
+    }
+  }
+  &.no-icon {
+    &:before {
+      width: 100%;
+      margin-left: 0;
+    }
+    &:after {
+      display: none;
+    }
+  }
+
+}

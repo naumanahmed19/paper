@@ -1,0 +1,70 @@
+/* = Icons
+-------------------------------------------------------------- */
+
+@mixin icon($name, $width, $height) {
+  background: url('../img/icon/' +$name+ '.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: $width+px;
+  height: $height+px;
+}
+
+.icon-left-arrow {
+  @include icon(icon-left-arrow,
+          51,
+          37);
+}
+
+.icon-right-arrow {
+  @include icon(icon-right-arrow,
+          51,
+          37);
+}
+
+.icon-yes {
+  @include icon(icon-yes,
+          32,
+          32);
+}
+
+.icon-not {
+  @include icon(icon-not,
+          32,
+          32);
+}
+
+.icon-article {
+  @include icon(icon-article,
+          24,
+          32);
+}
+
+.icon-video {
+  @include icon(icon-video,
+          32,
+          32);
+}
+
+.icon-img {
+  @include icon(icon-photo,
+          32,
+          32);
+}
+
+.icon-envelope-line {
+  @include icon(icon-envelope,
+          64,
+          64);
+}
+
+.icon-download {
+  @include icon(icon-download,
+          24,
+          24);
+}
+
+.icon-rocket {
+  @include icon(icon-rocket,
+          64,
+          64);
+}

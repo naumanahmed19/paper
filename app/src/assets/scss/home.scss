@@ -1,0 +1,146 @@
+
+.subscribe, .newsletter {
+  form {
+    .icon-btn {
+      background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+      border: medium none;
+      color: #86939e;
+      font-size: 30px;
+      position: absolute;
+      right: 25px;
+      top: 44px;
+    }
+    padding: 30px 0;
+    .subscribe {
+      margin-top: 30px;
+    }
+  }
+}
+
+.hero {
+  text-align: center;
+
+  @include desktop {
+    height: 600px;
+  }
+  .section-heading {
+    h2 {
+      color: $default-text-color;
+      padding-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  img {
+    max-width: 100%;
+
+  }
+
+}
+
+.hero-circles-bg {
+  padding: 50px 0;
+  border-top: 1px solid $brand-border;
+  border-bottom: 1px solid $brand-border;
+  background: #f5f8fa url("../img/icon/icon-circles.png") no-repeat scroll center bottom;
+}
+
+.services {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h3 {
+    color: $color-6;
+    @include font-size(15px);
+    text-align: center;
+    font-weight: 400;
+  }
+  p {
+    color: $default-text-color;
+    font-size: 16px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    padding-top: 30px;
+    text-align: center;
+  }
+}
+
+.newsletter {
+  background: url("../img/basic/fan.png") no-repeat scroll center bottom;
+  background-color: #f5f8fa;
+  position: relative;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.testimonials {
+  padding: 0 0 90px;
+  color: #5e6977;
+  margin: 0 auto;
+  .testimonial-content {
+    font-weight: 100;
+    font-size: 20px;
+    max-width: 670px;
+    margin: 0 auto;
+  }
+}
+
+.icon-heading {
+  background: transparent url("../img/icon/icon-stone1.png") no-repeat scroll center bottom;
+  height: 258px;
+  margin-bottom: 36px;
+  padding-top: 84px;
+}
+
+.users-slider {
+  margin: 0 auto;
+  max-width: 864px;
+  position: relative;
+  .lSSlideWrapper {
+    position: absolute;
+    bottom: 0;
+  }
+  .lSSlideOuter {
+    height: 350px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    img {
+      width: 80px;
+      margin: 0 auto;
+      margin-top: 35px;
+    }
+    .active {
+      img {
+        transition: all 0.3s;
+        width: 160px;
+      }
+    }
+  }
+}
+
+.clients {
+  padding: 100px 0;
+}
+
+#home2carousel {
+  margin: 20px 0 100px;
+  img {
+    border-radius: 5px;
+  }
+}
+
+// Portfolio Home
+.ab-brand {
+  img {
+    float: right;
+    position: absolute;
+    right: 65px;
+    top: 24px;
+    width: 40px;
+  }
+}

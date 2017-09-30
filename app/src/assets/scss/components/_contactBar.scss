@@ -1,0 +1,34 @@
+.contactBar {
+  margin-top: -80px;
+  z-index: 96;
+  .contacts {
+    border: 1px solid #e1e8ee;
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+  }
+  .icon {
+    padding: 30px;
+    font-size: 48px;
+    display: block;
+  }
+  img {
+    padding: 25px;
+  }
+  .grey {
+    background: #fbfcfd;
+  }
+  .btn {
+    margin-top: 45px;
+    padding: 18px 70px;
+  }
+  p {
+    margin-bottom: 20px;
+  }
+  @media(max-width: 980px) {
+    .btn {
+      margin-bottom: 22px;
+      margin-top: 22px;
+    }
+  }
+}

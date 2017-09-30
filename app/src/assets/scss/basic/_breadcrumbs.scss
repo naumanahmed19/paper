@@ -1,0 +1,30 @@
+.breadcrumbs {
+  background: #fff;
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  ol {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      color: #5e6977;
+      font-size: 14px;
+      a {
+        text-decoration: none;
+        color: #03a9f4;
+      }
+      &::after {
+        content: " / ";
+        padding: 0 10px;
+        color: #e1e8ee;
+      }
+      &:last-child::after {
+        content: "  ";
+      }
+    }
+  }
+
+  @include tablet-and-phone {
+    display: none;
+  }
+}

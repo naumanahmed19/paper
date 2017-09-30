@@ -1,0 +1,12 @@
+//Sticky fill
+.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9;
+}
+sticky:before,
+.sticky:after {
+  content: '';
+  display: table;
+}

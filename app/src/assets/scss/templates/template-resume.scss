@@ -1,0 +1,42 @@
+.bg-icon-plane {
+  background-image: url("../img/icon/icon-plane.png");
+  background-repeat: no-repeat;
+}
+.template-resume {
+
+  .contactBar .icon {
+    padding: 15px;
+  }
+  .resume-header {
+    background-color: #f5f8fa;
+    background-position: bottom center;
+
+    color: $default-text-color;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    border-bottom: 1px solid #e1e8ee;
+    z-index: -1;
+    text-align: center;
+    h1 {
+      font-size: 48px;
+      color: $default-text-color;
+      text-transform: capitalize;
+      font-weight: 100;
+    }
+    .subtitle {
+      font-size: 24px;
+      padding: 35px 0;
+    }
+  }
+  .profiles {
+    text-align: center;
+  }
+
+}
+
+.resume2 {
+  .resume-header {
+    padding: 78px 0;
+    text-align: left;
+  }
+}

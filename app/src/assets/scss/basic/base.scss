@@ -1,0 +1,312 @@
+//
+// Base
+// --------------------------------------------------
+
+body {
+  color: $default-text-color;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  height: 100%;
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  padding-right: 0 !important;
+  //overflow: hidden;
+}
+
+a {
+  color: $brand-primary;
+  &:hover,
+  &:active,
+  &:focus {
+    outline: none;
+    text-decoration: none;
+    color: #03a9f4;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dark-heading-color;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.h5 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  line-height: 30px;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  li {
+    list-style: none;
+    font-weight: 300;
+    i {
+      padding-right: 15px;
+    }
+  }
+}
+
+header {
+  h2 {
+    line-height: 60px;
+  }
+}
+
+.overflow-hide {
+  overflow: hidden;
+}
+.section {
+  padding: 50px 0;
+  header {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+}
+
+.section-heading {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.section-title {
+
+  font-weight: 300;
+  color: #43484d;
+  @include desktop {
+    font-size: 52px;
+  }
+}
+
+.section-subtitle {
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 32px;
+  color: #5e6977;
+  width: 55%;
+  margin: 20px auto 40px;
+}
+
+.page {
+  .search-section, .page-header {
+    padding: 30px;
+    h1 {
+      font-size: 28px;
+      small {
+        background: $brand-primary;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 300;
+        padding: 3px 10px;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+#page_wrap {
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+}
+
+.offcanvas #page_wrap {
+  overflow: hidden;
+  position: absolute;
+}
+
+.offcanvas #page_wrap::after {
+  background: rgba(245, 248, 250, 0.7) none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 2s ease 0s;
+  z-index: 101;
+}
+
+@include desktop {
+  .enable-offcanvas {
+    .paper-nav-toggle,
+    #paper-offcanvas {
+      display: block;
+    }
+  }
+}
+
+.block {
+  font-size: 14px;
+  img {
+    border-radius: 3px;
+    margin: 15px 0 20px;
+    max-width: 100%;
+  }
+}
+
+.service-sidebar.sidebar-wrapper {
+  background-color: #f9f9fb;
+  border-radius: 5px;
+  margin-bottom: 35px;
+  padding: 20px;
+  h2 {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 36px;
+    padding-bottom: 0;
+    text-transform: capitalize;
+  }
+}
+
+.paper-block {
+  padding: 15px;
+  border: 3px solid $color-5;
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+
+.lSAction > .lSNext {
+  right: 30px;
+}
+
+.lSPager {
+  margin-top: 30px !important;
+}
+
+ul {
+  &.iconList {
+    li {
+      line-height: 3;
+      padding-left: 30px;
+      position: relative;
+      &:before {
+        color: $brand-primary;
+        content: "";
+        display: inline-block;
+        font-family: paperIcons;
+      }
+    }
+  }
+  &.arrowIcon {
+    li {
+      &:before {
+        content: "";
+      }
+    }
+  }
+  li {
+
+    &:before {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
+.hero-header {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background: rgba(28, 36, 65, 0.93);
+  background-position: center;
+  background-repeat: no-repeat;
+  .table {
+    display: table;
+    height: 100%;
+  }
+  .header-text {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .container {
+    height: 100%;
+  }
+}
+
+.cut-top {
+  content: ' ';
+  position: absolute;
+  z-index: 1;
+  top: -80px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 80px solid transparent;
+  border-right: 30px solid white;
+}
+
+.cut-bottom {
+  content: ' ';
+  position: absolute;
+  z-index: 1;
+  bottom: -80px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 80px solid transparent;
+  border-left: 30px solid white;
+}
+
+.portfolio-masonry {
+  .masonry-post {
+    padding: 0 10px;
+  }
+}
+
+@include lg-desktop {
+  .inside {
+    margin: 0 auto;
+    background: #fff;
+    width: 80%;
+    .container {
+      max-width: 100% !important;
+    }
+  }
+}
+
+.section-heading-icon {
+  padding-top: 84px;
+  background: transparent url("../img/icon/icon-stone1.png") no-repeat scroll center bottom;
+}
+
+.masthead {
+  display: table-cell;
+  vertical-align: middle;
+  width: 1%;
+  padding: 170px 0 120px;
+  text-align: center;
+}

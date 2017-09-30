@@ -1,0 +1,163 @@
+#app {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.loaded {
+  overflow: visible;
+}
+
+.loader-fade{
+  display: none;
+}
+.plane-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: paper-plane-scoping 2s alternate infinite;
+  -moz-animation: paper-plane-scoping 2s alternate infinite;
+  animation: paper-plane-scoping 2s alternate infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes paper-plane-scoping {
+  0% {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    transform: translateY(0px);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+}
+
+.plane {
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+  -webkit-animation: paper-plane-soaring 4s forwards infinite;
+  -moz-animation: paper-plane-soaring 4s forwards infinite;
+  animation: paper-plane-soaring 4s forwards infinite;
+}
+
+@-webkit-keyframes paper-plane-soaring {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  40% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  50% {
+    -webkit-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    transform: rotate(15deg);
+  }
+  60% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  70% {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+/* Make clicks pass-through */
+
+#nprogress {
+  pointer-events: none;
+  .bar {
+    background: $brand-primary;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+  }
+  .peg {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px $brand-primary, 0 0 5px $brand-primary;
+    opacity: 1.0;
+    -webkit-transform: rotate(3deg) translate(0px, -4px);
+    -ms-transform: rotate(3deg) translate(0px, -4px);
+    transform: rotate(3deg) translate(0px, -4px);
+  }
+  .spinner {
+    display: block;
+    position: fixed;
+    z-index: 9999;
+    top: 15px;
+    right: 15px;
+  }
+  .spinner-icon {
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    border: solid 2px transparent;
+    border-top-color: $brand-primary;
+    border-left-color: $brand-primary;
+    border-radius: 50%;
+    -webkit-animation: nprogress-spinner 400ms linear infinite;
+    animation: nprogress-spinner 400ms linear infinite;
+  }
+}
+
+/* Fancy blur effect */
+
+/* Remove these to get rid of the spinner */
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+  #nprogress {
+    .spinner, .bar {
+      position: absolute;
+    }
+  }
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes nprogress-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+

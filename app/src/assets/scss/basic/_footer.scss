@@ -1,0 +1,96 @@
+footer {
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  padding: 35px 0 0;
+
+  @include phone {
+    .brand {
+      text-align: center;
+    }
+  }
+  h4 {
+    color: #43484d;
+    font-size: 16px;
+  }
+  .brand img {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  ul {
+    padding: 0;
+  }
+  .footer-links {
+    padding-top: 5px;
+    li {
+      display: block;
+      list-style: none;
+      a {
+        color: #5e6977;
+        font-size: 14px;
+        line-height: 26px;
+        &:hover {
+          color: #7dc855;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .social {
+    padding: 20px 0;
+
+  }
+  .copyright {
+    color: #5e6977;
+  }
+  li {
+    position: relative;
+  }
+
+  .customeIconList {
+    margin-top: 30px;
+    li {
+      position: relative;
+      padding-left: 15px;
+      display: block;
+      margin-bottom: 25px;
+
+    }
+  }
+  ul.customeIconList > li {
+    padding-left: 30px;
+  }
+  .customeIconList li .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: #5fb7ea;
+  }
+
+  hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .copyrights {
+    padding: 10px 0;
+    font-weight: 300;
+  }
+}
+
+ul.arrow-list {
+  padding: 0;
+  li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      font-family: paperIcons;
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+}

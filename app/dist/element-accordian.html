@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/img/basic/favicon.ico" type="image/x-icon">
+    <title>Paper</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <style>
+        .loader {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, .98);
+            z-index: 9998;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<!-- Pre loader -->
+<div id="loader" class="loader">
+    <div class="plane-container">
+        <img class="plane" src="assets/img/basic/preloader-logo.png" alt="">
+    </div>
+</div>
+
+<div id="app" class="paper-loading">
+    <div class="btn-fixed-top-left">
+        <a href="documentations.html"
+           class="btn-fab  btn-primary shadow1">
+            <i class="icon icon-clipboard-list"></i>
+        </a>
+    </div>
+<main class="page">
+    <!-- Header -->
+<nav class="mainnav navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/basic/logo.png" alt="">
+            </a>
+            <a href="#" data-toggle="offcanvas" class="offcanvas dl-trigger paper-nav-toggle"><i></i>
+            </a>
+        </div>
+        <div class="paper_menu">
+            <div id="dl-menu" class="xv-menuwrapper responsive-menu">
+    <ul class="dl-menu">
+        <li class="parent megamenu"><a href="#">Home</a>
+            <ul class="lg-submenu lg-submenu-left">
+                <li>
+                    <a><i class="icon icon-package s-24 text-red"></i>Multipurpose</a>
+                    <ul class="lg-submenu">
+                        <li><a href="index.html">Home Page - 1</a></li>
+                        <li><a href="home2.html">Home Page - 2</a></li>
+                        <li><a href="home3.html">Home Page - 3</a></li>
+                        <li><a href="home4.html">Home Page - 4</a></li>
+                        <li><a href="home-sass.html">Home Sass - 1</a></li>
+                        <li><a href="home-sass2.html">Home Sass - 2</a></li>
+                        <li><a href="home-sass3.html">Home Sass - 3</a></li>
+                        <li><a href="home-single2.html">Home - Single 1 </a></li>
+                        <li><a href="home-single2.html">Home - Single 2 </a></li>
+                        <li><a href="home-agency.html">Home - Agency </a></li>
+                        <li><a href="home-agency2.html">Home - Agency 2</a></li>
+                        <li><a href="home-shop.html">Marketplace<span
+                                class="badge badge-blue">Shop</span></a></li>
+                        <li><a href="home-archi.html">Home - Architecture</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a><i class="icon icon-package s-24 text-green"></i>Niche</a>
+                    <ul class="lg-submenu">
+                        <li><a href="home-instructor.html">Home - Instructor</a></li>
+                        <li><a href="home-events.html">Events Home</a></li>
+                        <li><a href="home-freebies.html">Freebies Home <span
+                                class="badge badge-yellow">unique</span></a></li>
+                        <li><a href="home-charity.html">Charity Home</a></li>
+                        <li><a href="home-resume1.html">Personal Resume</a></li>
+                        <li><a href="home-resume2.html">Personal Resume 2</a></li>
+                        <li><a href="home-knowledgebase1.html">Knowledgebase 1</a></li>
+                        <li><a href="home-knowledgebase2.html">Knowledgebase 2</a></li>
+                        <li><a href="home-masonary.html">Home - Masonary Wall</a></li>
+                        <li><a href="home-video.html">You Tube Video</a></li>
+                        <li><a href="home-game-app.html">Home - Game Landing page</a></li>
+                        <li><a href="home-portfolio.html">Home - Portfolio</a></li>
+                        <li><a href="home-realstate.html">Home - Real State <span
+                                class="badge badge-green green"></span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a><i class="icon icon-package s-24 text-blue"></i>Updates</a>
+                    <ul class="lg-submenu">
+                        <li><i class="icon icon-package text-blue"></i><strong>Version 1.6</strong></li>
+                        <li><a href="hero-section1.html"><i class="icon icon-circle-o text-blue"></i>Hero Section 1</a>
+                        </li>
+                        <li><a href="hero-section2.html"><i class="icon icon-circle-o yellow-text"></i> Hero Section
+                            2</a></li>
+                        <li><a href="hero-section3.html"><i class="icon icon-circle-o red-text"></i> Hero Section 3</a>
+                        </li>
+                        <li><a href="hero-section4.html"><i class="icon icon-circle-o purple-text"></i> Hero Section
+                            4</a></li>
+                        <li><a href="hero-section5.html"><i class="icon icon-circle-o orange-text"></i> Hero Section
+                            5</a></li>
+                        <li><a href="hero-section6.html"><i class="icon icon-circle-o green-text"></i> Hero Section
+                            6</a></li>
+                        <li class="divider"></li>
+                        <li><i class="icon icon-package text-blue"></i><strong>Version 1.7</strong></li>
+                        <li><a href="https://themeforest.net/item/paper-mulitipurpose-html-template/20382955">Buy Now<span
+                                class="badge badge-red">Bootstarap 4</span></a></li>
+
+                    </ul>
+
+                </li>
+            </ul>
+        </li>
+        <li class="parent"><a href="#">Pages</a>
+            <ul class="lg-submenu">
+                <li class="parent"><a href="#">Services</a>
+                    <ul class="lg-submenu">
+                        <li><a href="services1.html">Services 1</a></li>
+                        <li><a href="services2.html">Services 2</a></li>
+                        <li><a href="services3.html">Services 3</a></li>
+                    </ul>
+                </li>
+                <li class="parent"><a href="#">Team</a>
+                    <ul class="lg-submenu">
+                        <li><a href="team.html">Team Layout 1</a></li>
+                        <li><a href="team2.html">Team Layout 2 <span
+                                class="badge badge-green">Carousel</span></a></li>
+                        <li><a href="team3.html">Team Layout 3</a></li>
+                        <li><a href="team4.html">Team Layout 4 <span class="badge">Filter</span></a></li>
+                    </ul>
+                </li>
+                <li class="parent"><a href="#">About Us</a>
+                    <ul class="lg-submenu">
+                        <li><a href="about-us.html">About Us 1</a></li>
+                        <li><a href="about-us2.html">About Us 2</a></li>
+                    </ul>
+                </li>
+                <li class="parent"><a href="#">Testimonials</a>
+                    <ul class="lg-submenu">
+                        <li><a href="testimonials.html">Grid Testimonials</a></li>
+                        <li><a href="testimonials2.html">Slide Testimonials</a></li>
+                        <li><a href="testimonials3.html">Slide Gradient <span class="badge badge-red">Hot</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="parent"><a href="#">Contact Pages</a>
+                    <ul class="lg-submenu">
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact2.html">Contact 2</a></li>
+                    </ul>
+                </li>
+                <li class="parent"><a href="#">Login pages</a>
+                    <ul class="lg-submenu">
+                        <li><a href="login.html">Login Layout 1</a></li>
+                        <li><a href="login-2.html">Login Layout 2</a></li>
+                        <li><a href="login-3.html">Login Layout 3</a></li>
+                        <li><a href="login-4.html">Login Layout 4 </a></li>
+                    </ul>
+                </li>
+                <li class="parent"><a href="#">Portfolio pages</a>
+                    <ul class="lg-submenu">
+                        <li><a href="portfolio-2col.html">Two Column</a></li>
+                        <li><a href="portfolio-3col.html">Three Column</a></li>
+                        <li><a href="portfolio-4col.html">Four Column</a></li>
+                        <li><a href="portfolio-single.html">Details Page</a></li>
+                        <li><a href="portfolio-single2.html">Details Page2</a></li>
+                    </ul>
+                </li>
+                <li class="parent"><a href="#">Single pages</a>
+                    <ul class="lg-submenu">
+                        <li><a href="portfolio-single.html">Portfolio Single</a></li>
+                        <li><a href="portfolio-single2.html">Portfolio Single 2</a></li>
+                        <li><a href="single.html">Blog Single</a></li>
+                        <li><a href="single2.html">Blog Single2</a></li>
+                        <li><a href="shop-single.html">Shop Single <span
+                                class="badge badge-red">hot</span></a></li>
+                    </ul>
+                </li>
+                <li class="parent"><a href="#">Special pages <span class="badge badge-green">bonus</span></a>
+                    <ul class="lg-submenu">
+                        <li><a href="coming-soon.html">Coming soon</a></li>
+                        <li><a href="404.html">404 Layout 1</a></li>
+                        <li><a href="404-2.html">404 Layout 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="documentations.html"><i class="icon icon-book"></i> Documentations <span
+                            class="badge badge-red">A+</span></a>
+                </li>
+                <li>
+                    <a href="dashboard.html"><i class="icon icon-dashboard"></i> Dashboard </a>
+                </li>
+                <li>
+                    <a href="demo.html"><i class="icon icon-diamond2"></i> Demo Page</a>
+                </li>
+                <li>
+                    <a href="demo1.html"><i class="icon icon-diamond2"></i> Demo Page 1.2</a>
+                </li>
+
+            </ul>
+        </li>
+        <li class="parent megamenu"><a href="#">Features <span class="badge badge-red">New</span></a>
+            <ul class="lg-submenu">
+                <li><a>Pages With ...</a>
+                    <ul class="lg-submenu">
+                        <li><a href="home2.html"><i class="icon icon-circle-o text-yellow"></i>Pre Header
+                            Nav</a></li>
+                        <li><a href="home-agency.html"><i class="icon icon-circle-o text-red"></i>Fixed Main Nav</a>
+                        </li>
+                        <li><a href="services1.html"><i class="icon icon-circle-o text-green"></i>Paper Page
+                            Title</a></li>
+                        <li><a href="contact.html"><i class="icon icon-circle-o text-light-blue"></i>Paper Page
+                            Title 2</a></li>
+                        <li><a href="team2.html"><i class="icon icon-circle-o text-warning"></i>Gradient Page
+                            Title</a></li>
+                        <li><a href="services2.html"><i class="icon icon-circle-o text-info"></i>Simple Page
+                            Title</a></li>
+                        <li><a href="about-us2.html"><i class="icon icon-circle-o text-danger"></i>Overlay Page
+                            Title</a></li>
+                        <li><a href="portfolio-4col.html"><i class="icon icon-circle-o text-light-blue"></i>Overlay
+                            Centered Title</a></li>
+                        <li><a href="home-resume1.html"><i class="icon icon-circle-o text-light-blue"></i>Mini Menu
+                            <span class="badge badge-green">Updated</span></a></li>
+                        <li><a href="home-resume2.html"><i class="icon icon-circle-o text-light-green "></i>Off Canvas
+                            Menu <span class="badge badge-red blink">New</span></a></li>
+                        <li><a href="home-single2.html"><i class="icon icon-circle-o text-red"></i>Sidebar Menu </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a>Bootstrap Elements</a>
+                    <ul class="lg-submenu">
+                        <li><a href="element-overlay.html"><i class="icon icon-protection"></i>Overlay Vartions</a>
+                        </li>
+                        <li><a href="element-footers.html"><i class="icon icon-bookmark text-red"></i>Footer
+                            Variations</a></li>
+                        <li><a href="element-nav.html"><i class="icon icon-menu text-red"></i>Menu
+                            Variations</a></li>
+                        <li><a href="element-pagers.html"><i class="icon icon-sort-numeric-asc"></i>Pagers</a>
+                        </li>
+                        <li><a href="element-panels.html"><i class="icon icon-certificate"></i>Panels</a></li>
+                        <li><a href="element-alerts.html"><i class="icon icon-compass"></i>Alerts</a></li>
+                        <li><a href="element-accordian.html"><i class="icon icon-magic"></i>Accordian</a></li>
+                        <li><a href="element-tabs.html"><i class="icon icon-folder"></i>Tabs</a></li>
+                        <li><a href="element-progress-bars.html"><i class="icon icon-bars"></i>Progress Bars</a>
+                        </li>
+                        <li><a href="element-forms.html"><i class="icon icon-calculator"></i>Forms</a></li>
+                        <li><a href="element-offcanvas.html"><i class="icon icon-hand-grab-o"></i>offcanvas Sidebar</a>
+                        </li>
+                        <li><a href="element-divider.html"><i class="icon icon-air-sock"></i>Dividers</a></li>
+                    </ul>
+                </li>
+                <li><a>Paper Elements</a>
+                    <ul class="lg-submenu">
+                        <li><a href="element-carousel.html"><i class="icon icon-sliders"></i>Carousels</a></li>
+                        <li><a href="element-pricing.html"><i class="icon icon-money"></i>Pricing Sections</a>
+                        </li>
+                        <li><a href="element-team.html"><i class="icon icon-organization"></i>Team Sections</a>
+                        </li>
+                        <li><a href="element-services.html"><i class="icon icon-presentation"></i>Services
+                            Sections</a></li>
+                        <li><a href="element-thumbnails.html"><i class="icon icon-picture-o"></i>Thumbnails</a>
+                        </li>
+                        <li><a href="element-animated-headline.html"><i class="icon icon-file-text-o"></i>Text
+                            Rotators</a></li>
+                        <li><a href="element-top-slope.html"><i class="icon icon-analytics-1"></i>Section Top
+                            Slope</a></li>
+                        <li><a href="element-bottom-slope.html"><i class="icon icon-analytics-2"></i>Section
+                            Bottom Slope</a></li>
+                        <li><a href="element-mokup-slider.html"><i class="icon icon-laptop"></i>Mokups
+                            Slider</a></li>
+                        <li><a href="element-promotions-bar.html"><i class="icon icon-agenda"></i>Promotions Bar</a>
+                        </li>
+                        <li><a href="element-tabels.html"><i class="icon-table"></i>Tables</a>
+                        </li>
+                        <li><a href="element-modal.html"><i class="icon-magnet"></i>Modals</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a>UI Elements <span class="badge badge-red">Shortcodes</span> </a>
+                    <ul class="lg-submenu">
+                        <li><a href="element-lists.html"><i class="icon icon-list"></i>List Group</a></li>
+                        <li><a href="element-buttons.html"><i class="icon icon-target3"></i>Button</a></li>
+                        <li><a href="element-typography.html"><i class="icon icon-pen"></i>Typography</a></li>
+                        <li><a href="element-media-list.html"><i class="icon icon-list-alt"></i>Media List</a>
+                        </li>
+                        <li><a href="element-comments-list.html"><i class="icon icon-list-alt"></i>Comments List</a>
+                        </li>
+                        <li><a href="element-parallax.html"><i class="icon icon-laptop"></i>Parallax</a></li>
+                        <li><a href="element-timeline.html"><i class="icon icon-laptop"></i>Time Line</a></li>
+                        <li><a href="element-counter.html"><i class="icon icon-startup"></i>Statistic
+                            Counter</a></li>
+                        <li><a href="element-progressbars.html"><i class="icon icon-agenda"></i>Circular
+                            Progressbars</a></li>
+                        <li><a href="element-icons.html"><i class="icon icon-agenda"></i>Icons
+                            <span class="badge badge-yellow">2692</span></a></li>
+                        <li><a href="element-colors.html"><i class="icon icon-agenda"></i>Color Palette
+                            <span class="badge badge-red">Unlimited</span></a></li>
+
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="parent megamenu"><a href="#"><i class="icon icon-shopping-bag2"></i>Shop</a>
+            <ul class="lg-submenu">
+                <li><a><i class="icon icon-shopping-bag2 s-24"></i>Shop Pages</a>
+                    <ul class="lg-submenu">
+                        <li><a href="home-shop.html">Shop Home <span
+                                class="badge badge-yellow">unique</span></a></li>
+                        <li><a href="shop.html">Shop Simple</a></li>
+                        <li><a href="shop-single.html">Product Detail <span
+                                class="badge badge-red">hot</span></a></li>
+                        <li><a href="shop-left-sidebar.html">Shop Left Sidebar</a></li>
+                        <li><a href="register.html">login/signup</a></li>
+                        <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                        <li><a href="password-recovery.html">Forgot Password</a></li>
+                        <li><a href="cart.html">Cart <span class="badge">11 items</span></a></li>
+                        <li><a href="checkout.html">Check out</a></li>
+                    </ul>
+                    <a href="/home10-shop.html" class="btn btn-success">
+                        <i class="icon icon-shopping-bag2 s-24"></i> Shop Now</a>
+                </li>
+                <li>
+                    <div>
+                        <div class="text-center">
+                            <p><strong> Best Sale Offer</strong> <span
+                                    class="badge badge-red">30% Off Today</span></p>
+                        </div>
+                        <figure><img src="assets/img/demo/ipad.png" alt=""/></figure>
+                    </div>
+                </li>
+            </ul>
+        </li>
+        <li class="parent"><a href="#">Blog</a>
+            <ul class="lg-submenu">
+                <li><a href="blog.html">Paper Blog</a></li>
+                <li><a href="blog-masonary.html">Blog Masonary</a></li>
+                <li><a href="single.html">Blog Single</a></li>
+                <li><a href="single2.html">Blog Single2 </a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#modalLogin" data-toggle="modal" data-target="#modalLogin">
+                Login
+            </a>
+        </li>
+        <li>
+            <a href="#modalSignUp" class="btn btn-primary nav-btn" data-toggle="modal" data-target="#modalSignUp">Sign
+                Up</a>
+        </li>
+    </ul>
+</div>
+<!-- Login modal -->
+
+        </div>
+    </div>
+</nav>
+
+
+    <div class="search-section">
+        <div class="container">
+            <h1>Accordion</h1>
+        </div>
+    </div>
+    <!-- Breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <ol>
+                <li><a href="/">Home</a></li>
+                <li class="active">Accordion</li>
+            </ol>
+        </div>
+    </div>
+    <div class="content-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="accordion style1 clearfix">
+                        <div class="panel-group" id="accordion1">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="active" data-toggle="collapse" data-parent="#accordion1"
+                                           href="#collapse1">
+                                            <span class="fa fa-minus accordain-icon"></span>
+                                            Why choose Avalon?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion1"
+                                           href="#collapse2">
+                                            <span class="fa fa-plus accordain-icon"></span>
+                                            How do we work?
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse2" class="panel-collapse collapse">
+                                    <div class="panel-body"> Ad vegan excepteur butcher vice lomo. Leggings occaecat
+                                        craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably
+                                        haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" class="collapsed" data-parent="#accordion1"
+                                           href="#collapse3">
+                                            <span class="fa fa-plus accordain-icon"></span>
+                                            Level of service we provide.
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" class="collapsed" data-parent="#accordion1"
+                                           href="#collapse4">
+                                            <span class="fa fa-plus accordain-icon"></span>
+                                            Our philosophy
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapse4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
+                                        eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                        single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                                        helvetica
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  <!--column-->
+                <div class="col-xs-12 col-md-6">
+                    <div class="accordion">
+                        <div class="panel-group" id="accordion-2">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-2" href="#collapseOne">
+                                            Collapsible Group Item #1
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-2" href="#collapseTwo">
+                                            Collapsible Group Item #2
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion-2" href="#collapseThree">
+                                            Collapsible Group Item #3
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--column-->
+            </div><!--row-->
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class=" col-md-2 col-lg-3 col-xs-12 responsive-phone">
+                <a href="#" class="brand">
+                    <img src="assets/img/basic/logo.png" alt="Knowledge">
+                    <span class="circle"></span>
+                </a>
+            </div>
+            <div class="col-xs-6  col-sm-4 col-md-2">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6  col-sm-4 col-md-2">
+                <h4>Knowledgebase</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6  col-sm-4 col-md-2">
+                <h4>About Us</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-6 col-sm-12 col-xs-12 col-lg-3 responsive-phone">
+                <h4>Connect via Social</h4>
+                <ul class="social">
+                    <li class="facebook"><a href="#"><i class="icon icon-facebook"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="icon icon-twitter"></i></a></li>
+                    <li class="gplus"><a href="#"><i class="icon icon-google-plus"></i></a></li>
+                </ul>
+                <div class="copyrights">
+                    <p>© 2016 knowledge Copyrights</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Login modal -->
+<div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog width-400" role="document">
+        <div class="modal-content no-r ">
+            <a href="#" data-dismiss="modal" aria-label="Close" class="paper-nav-toggle active"><i></i></a>
+            <div class="modal-body no-p">
+                <div class="text-center p-40 p-b-0">
+                    <img src="assets/img/dummy/u4.png" alt=""/>
+                    <h2>Welcome Back</h2>
+                    <p class="p-t-b-20">Hey Soldier welcome back signin now there is lot of new stuff
+                        waiting for you</p>
+                </div>
+                <div class="light p-40 b-t-b">
+                    <form action="dashboard2.html">
+                        <div class="form-group has-icon">
+                            <i class="icon-envelope-o"></i>
+                            <input type="text" class="form-control input-lg"
+                                   placeholder="Email Address"/>
+                        </div>
+                        <div class="form-group has-icon">
+                            <i class="icon-user-secret"></i>
+                            <input type="text" class="form-control input-lg"
+                                   placeholder="Password"/>
+                        </div>
+                        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Log In">
+                        <small class="forget-pass">Have you forgot your username or password ?</small>
+                    </form>
+                </div>
+                <div class="p-40">
+                    <a href="#" class="btn btn-lg btn-block btn-social facebook">
+                        <i class="icon-facebook"></i> Login with Facebook
+                    </a>
+                    <a href="#" class="btn btn-lg btn-block btn-social twitter">
+                        <i class="icon-twitter"></i> Login with Twitter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- SignUp modal -->
+<div class="modal fade" id="modalSignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content no-r ">
+            <a href="#" data-dismiss="modal" aria-label="Close" class="paper-nav-toggle active"><i></i></a>
+            <div class="modal-body no-p">
+                <div class="row">
+                    <div class="col-md-5 grid">
+                        <div class="p-40">
+                            <img class="img-80" src="assets/img/dummy/u4.png" alt=""/>
+                            <h4>Sign Up Using Social Account</h4>
+                            <p class="p-t-b-20">Hey Soldier welcome back signin now there is lot of new stuff
+                                waiting for you</p>
+                            <a href="#" class="btn btn-lg btn-block btn-social facebook">
+                                <i class="icon-facebook"></i> Login with Facebook
+                            </a>
+                            <a href="#" class="btn btn-lg btn-block btn-social twitter">
+                                <i class="icon-twitter"></i> Login with Twitter
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="light p-t-b-40">
+                            <div class="p-40">
+                                <h4>Create New User Account</h4>
+                                <form action="dashboard2.html ">
+                                    <div class="form-group has-icon">
+                                        <i class="icon-user-circle"></i>
+                                        <input type="text" class="form-control input-lg"
+                                               placeholder="Your Name"/>
+                                    </div>
+                                    <div class="form-group has-icon">
+                                        <i class="icon-envelope-o"></i>
+                                        <input type="text" class="form-control input-lg"
+                                               placeholder="Email Address"/>
+                                    </div>
+                                    <div class="form-group has-icon">
+                                        <i class="icon-user-secret"></i>
+                                        <input type="text" class="form-control input-lg"
+                                               placeholder="Password"/>
+                                    </div>
+                                    <div class="form-group has-icon">
+                                        <i class="icon-repeat"></i>
+                                        <input type="text" class="form-control input-lg"
+                                               placeholder="Confirm Password"/>
+                                    </div>
+                                    <input type="submit" class="btn btn-primary btn-lg btn-block" value="Sign Up Now">
+                                    <p class="forget-pass">A verification email wil be sent to you</p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--End Page page_wrrapper -->
+<script src="assets/js/app.js"></script>
+<script>
+    /*=========Place Google Tracker Code here===========*/
+</script>
+</body>
+</html>

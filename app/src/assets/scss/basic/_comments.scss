@@ -1,0 +1,67 @@
+.comments {
+  .comment-list {
+    li {
+      position: relative;
+      overflow: visible;
+      list-style: none;
+      background: #fff;
+      border: 1px solid $brand-border;
+      border-radius: 5px;
+
+      .avatar {
+        border-radius: 50%;
+        margin-left: -28px;
+        margin-top: 15px;
+        padding: 5px;
+        position: absolute;
+        border: 1px solid #eeeeee;
+        height: 58px;
+      }
+      .description {
+        padding: 15px 30px 10px 48px;
+        li {
+          background: none;
+          padding: 0;
+          border: none;
+          margin: 0;
+        }
+      }
+      .reply {
+        float: right;
+      }
+      .comments-meta {
+        border-top: 1px solid #eeeeee;
+        background: #f5f8fa;
+        padding: 5px 20px;
+        li {
+          background: none;
+          display: inline;
+          border: none;
+          margin-top: 0;
+        }
+        time::before {
+          content: "|";
+          display: inline-block;
+          padding: 0 30px;
+        }
+        a {
+          font-size: 14px;
+          font-weight: 300;
+        }
+      }
+      ol.comment-list-child {
+        padding: 0;
+        .comment {
+          margin-top: 0;
+          border: none;
+          .description {
+            padding: 15px 48px 10px 30px;
+          }
+          .avatar {
+            right: -28px;
+          }
+        }
+      }
+    }
+  }
+}

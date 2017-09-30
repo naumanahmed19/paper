@@ -1,0 +1,67 @@
+.service-blocks {
+  .service-block {
+    margin-bottom: 35px;
+    .service-icon {
+      float: left;
+      margin: 10px 20px 0 0;
+      i {
+        border-radius: 100%;
+        color: $default-text-color;
+        display: block;
+        height: 70px;
+        line-height: 70px;
+        text-an: center;
+        width: 70px;
+      }
+    }
+    &:hover .service-icon i {
+      opacity: 0.5;
+    }
+    .service-icon i::before {
+      font-size: 60px;
+    }
+    .service-content {
+      overflow: hidden;
+      h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        a {
+          color: #606676;
+          &:hover {
+            color: $brand-primary;
+          }
+        }
+      }
+    }
+    .btn {
+      margin: 20px 0 10px 0;
+    }
+    &.s1{
+      .service-icon{
+        float: none;
+      }
+    }
+    &.s2 {
+      padding: 20px;
+      .service-icon i::before {
+        font-size: 40px;
+      }
+
+    }
+  }
+
+  .center {
+    text-align: center;
+    .service-icon {
+      float: none !important;
+      i {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.single-service-contents {
+  padding: 100px 0 65px;
+}
