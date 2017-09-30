@@ -1,0 +1,51 @@
+{
+  "name": "Paper",
+  "version": "1.6.0",
+  "slug": "paper",
+  "description": "A Multipuprpose HTML Template",
+  "main": "app/dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nomi",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.3",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-changed": "^3.1.0",
+    "gulp-clean-css": "^3.4.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-ftp": "^1.1.0",
+    "gulp-gm": "0.0.8",
+    "gulp-htmlclean": "^2.7.14",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-inject-partials": "0.0.3",
+    "gulp-minify-inline": "^1.0.0",
+    "gulp-sass": "^2.3.1",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-uglify": "^1.5.4",
+    "gulp-uglifycss": "^1.0.6",
+    "gulp-util": "^3.0.8",
+    "gulp-webpack": "^1.5.0",
+    "gulp-zip": "^4.0.0"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "chart.js": "^2.5.0",
+    "del": "^3.0.0",
+    "gmaps": "^0.4.24",
+    "google-maps": "^3.2.1",
+    "gulp-cached": "^1.1.1",
+    "gulp-util": "^3.0.8",
+    "isotope-layout": "^3.0.3",
+    "jquery": "^3.1.1",
+    "jquery-knob": "github:aterrien/jQuery-Knob",
+    "jquery.easing": "^1.4.1",
+    "jquery.mmenu": "github:frdh/jQuery.mmenu",
+    "lightslider": "^1.1.6",
+    "load-google-maps-api": "0.0.2",
+    "nprogress": "^0.2.0",
+    "scrollreveal": "^3.3.6",
+    "vinyl-ftp": "^0.6.0"
+  }
+}
