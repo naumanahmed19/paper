@@ -9,8 +9,8 @@ Paper is multipurpose responsive HTML template based on twitter Bootstrap 3, Sui
 
 ## Demo
 
-* [Bootstrap 3](http://www.dropwizard.io/1.0.2/docs/) - Free Version
-* [Bootstrap 4](https://maven.apache.org/) - Premium Version
+* [Bootstrap 3](http://xvelopers.com/demos/html/paper-1.6.0/demo.html) - Free Version
+* [Bootstrap 4](https://themeforest.net/item/paper-mulitipurpose-html-template/20382955) - Premium Version
 
 
 
